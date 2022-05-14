@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,34 +8,56 @@
     
     <link rel="stylesheet" href="./style.css">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
 </head>
 <body>
     
     <div class="container">
         <header>
-            <img src="./images/top-image.svg" alt="">
+            <img src="./assets/top-image.svg" alt="">
         </header>
         
         <div class="page">
             <main>
-                <h1>Readt to launch in...</h1>
+                <h1>Ready to launch in...</h1>
+
                 <div class="countdown">
-                    <p>Dias</p>
-                    <p>Horas</p>
-                    <p>Minutos</p>
-                    <p>Segundos</p>
+                    <div class="countdown-container">
+                        <p>Dias</p>
+                        <p class="days"></p>
+                    </div>
+
+                    <div class="countdown-container">
+                        <p>Horas</p>
+                        <p class="hours"></p>
+                    </div>
+
+                    <div class="countdown-container">
+                        <p>Minutos</p>
+                        <p class="minutes"></p>
+                    </div>
+
+                    <div class="countdown-container">
+                        <p>Segundos</p>
+                        <p class="seconds"></p>
+                    </div>
                 </div>
-                <p>Inscreva-se para saber mais sobre o lançamento</p>
+
+                <span>Inscreva-se para saber mais sobre o lançamento</span>
+                
                 <button type="submit">Inscreva-se</button>
             </main>
             
             <aside>
-                <img src="./images/rocket.svg" alt="">
+                <img src="./assets/rocket.svg" alt="">
             </aside>
         </div>
 
         <footer>
-            <img src="./images/bottom-image.svg" alt="">
+            <img src="./assets/bottom-image.svg" alt="">
         </footer>
     </div>
 
