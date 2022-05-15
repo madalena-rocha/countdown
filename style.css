@@ -31,6 +31,11 @@ img {
 .container {
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+header {
+    height: 13.3rem;
 }
 
 .page {
@@ -64,11 +69,13 @@ h1 {
 }
 
 .countdown {
-    display: flex;
+    display: grid;
+    grid-template-columns: 10rem 2rem 10rem 2rem 10rem 2rem 10rem 2rem 10rem 2rem 10rem;
+    text-align: center;
     align-items: center;
 }
 
-.countdown p:nth-child(1) {
+.countdown-container p  {
     font-weight: 300;
     font-size: 1.4rem;
     line-height: 2.1rem;
@@ -78,7 +85,7 @@ h1 {
     color: var(--light-grey);
 }
 
-.countdown p:nth-child(2) {
+h3 {
     font-weight: 400;
     font-size: 7.2rem;
     line-height: 10.8rem;
@@ -108,7 +115,10 @@ button {
     border:none;
     border-radius: 1rem;
 
-    padding: 1rem 3.2rem 1.6rem;
+    padding: 1.6rem 3.2rem;
+    width: fit-content;
+
+    cursor: pointer;
 }
 
 aside {
@@ -116,4 +126,106 @@ aside {
     height: 43.5rem;
 
     margin-top: 1.7rem;
+}
+
+.lateral-image {
+    opacity: 1;
+    visibility: visible;
+}
+
+.lateral-image.transparency {
+    opacity: 0.6;
+    visibility: visible;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+
+    z-index: -1;
+
+    height: 22.9rem;
+}
+
+/* === Modal =========================== */
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    
+    opacity: 0;
+    visibility: hidden;
+    
+    z-index: 1;
+}
+  
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.main-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+.main-menu.disabled {
+    opacity: 0;
+    visibility: hidden;
+}
+
+form {
+    width: 49.4rem;
+    height: 31.6rem;
+
+    margin-top: 17rem;
+}
+
+form fieldset{
+    display: flex;
+    flex-direction: column;
+
+    background: var(--light-grey);
+
+    border: none;
+    border-radius: 1rem;
+
+    padding: 1rem;
+}
+
+form legend {
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 5.4rem;
+
+    color: var(--purple);
+
+    text-shadow: 1px 1px 2px gray;
+}
+
+form label {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.1rem;
+
+    color: var(--purple);
+}
+
+form input {
+    margin-bottom: 1.9rem;
+
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.1rem;
+
+    color: var(--text-color);
+
+    border: none;
+    border-radius: 0.5rem;
+
+    padding: 0.5rem;
+}
+
+form button {
+    align-self: center;
 }
