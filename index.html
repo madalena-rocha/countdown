@@ -21,37 +21,67 @@
         </header>
         
         <div class="page">
-            <main>
+            <main class="main-menu">
                 <h1>Ready to launch in...</h1>
 
                 <div class="countdown">
                     <div class="countdown-container">
+                        <p>Anos</p>
+                        <h3 class="years"></h3>
+                    </div>
+
+                    <div class="separator">
+                        <h3>:</h3>
+                    </div>
+
+                    <div class="countdown-container">
+                        <p>Meses</p>
+                        <h3 class="months"></h3>
+                    </div>
+
+                    <div class="separator">
+                        <h3>:</h3>
+                    </div>
+                    
+                    <div class="countdown-container">
                         <p>Dias</p>
-                        <p class="days"></p>
+                        <h3 class="days"></h3>
+                    </div>
+
+                    <div class="separator">
+                        <h3>:</h3>
                     </div>
 
                     <div class="countdown-container">
                         <p>Horas</p>
-                        <p class="hours"></p>
+                        <h3 class="hours"></h3>
+                    </div>
+
+                    <div class="separator">
+                        <h3>:</h3>
                     </div>
 
                     <div class="countdown-container">
                         <p>Minutos</p>
-                        <p class="minutes"></p>
+                        <h3 class="minutes"></h3>
+                    </div>
+
+                    <div class="separator">
+                        <h3>:</h3>
                     </div>
 
                     <div class="countdown-container">
                         <p>Segundos</p>
-                        <p class="seconds"></p>
+                        <h3 class="seconds"></h3>
                     </div>
                 </div>
 
                 <span>Inscreva-se para saber mais sobre o lançamento</span>
                 
-                <button type="submit">Inscreva-se</button>
+                <button onclick="Modal.open()">Inscreva-se</button>
             </main>
             
-            <aside>
+            <aside class="lateral-image">
                 <img src="./assets/rocket.svg" alt="">
             </aside>
         </div>
@@ -59,6 +89,27 @@
         <footer>
             <img src="./assets/bottom-image.svg" alt="">
         </footer>
+    
+
+        <div class="modal-overlay">
+            <form action="">
+                <fieldset>
+                    <legend>Inscreva-se</legend>
+                    
+                    <label for="name">Nome Completo</label>
+
+                    <input id="name" type="text" name="name"
+                    placeholder="Digite seu nome">
+                    
+                    <label for="email">E-mail</label>
+
+                    <input id="email" type="email" name="email"
+                    placeholder="email@seudominio.com">
+            
+                    <button type="submit" onclick="Modal.close()">Enviar</button>
+                </fieldset>
+            </form>
+        </div>
     </div>
 
     <script src="./scripts.js"></script>
