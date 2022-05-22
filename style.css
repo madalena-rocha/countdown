@@ -35,6 +35,7 @@ img {
 }
 
 header {
+    width: 136.6rem;
     height: 13.3rem;
 }
 
@@ -144,6 +145,7 @@ footer {
 
     z-index: -1;
 
+    width: 136.6rem;
     height: 22.9rem;
 }
 
