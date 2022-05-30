@@ -58,13 +58,13 @@ setInterval(countdown, 1000);
 
 const Modal = {
     open() {
-      document.querySelector('.modal-overlay').classList.add('active')
-      document.querySelector('.main-menu').classList.add('disabled')
-      document.querySelector('.lateral-image').classList.add('transparency')
+      document.querySelector('.modal-overlay').classList.add('active');
+      document.querySelector('.main-menu').classList.add('disabled');
+      document.querySelector('.lateral-image').classList.add('transparency');
     },
     close() {
-      document.querySelector('.modal-overlay').classList.remove('active')
-      document.querySelector('.main-menu').classList.remove('disabled')
-      document.querySelector('.lateral-image').classList.remove('transparency')
+      document.querySelector('.modal-overlay').classList.remove('active');
+      document.querySelector('.main-menu').classList.remove('disabled');
+      document.querySelector('.lateral-image').classList.remove('transparency');
     }
 }
